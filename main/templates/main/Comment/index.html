@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Berry Joy</title>
+    <link rel="stylesheet" type="text/css" href="/static/style_Comment.css">
+    <link rel="icon" type="image/png" href="/static/Content/Berry_Joy_icon.png">
+    <link rel="stylesheet" href="/static/animate.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() != 0) {
+                    $('#toTop').fadeIn();
+                } else {
+                    $('#toTop').fadeOut();
+                }
+            });
+            $('#toTop').click(function () {
+                $('body,html').animate({ scrollTop: 0 }, 800);
+            });
+        });
+    </script>
+
+    <style>
+        @font-face {
+            font-family: BebasNeueBold;
+            src: url(/static/Fonts/11585.ttf);
+        }
+    </style>
+</head>
+<body>
+
+	<script src="js/wow.min.js"></script>
+
+	<div id="toTop"> <p id="toTop_text">Наверх</p> </div>
+
+	<div class="all wow slideInLeft" data-wow-duration="1s" data-wow-offset = "200">
+		<div class="header">
+			<div class="back_image">
+				<img style="border-bottom: 0.5vw solid #d12000" src="/static/Content/header_back_image3.jpg" alt="" id="back_image_image">
+			</div>
+			<div class="logo_block">
+				<a href="../Main/index.html">
+					<p class="logo_text">Berry Joy</p>
+				</a>
+			</div>
+			<div class="logo_png">
+				<img src="/static/Content/Berry_Joy_logo.png" alt="" id="logo_png_image">
+			</div>
+			<div id="navigation_menu">
+                <nav>
+                    <a href="main" id="Home">Главная</a>
+                    <a href="product" id="Services">Товары</a>
+                    <a href="about" id="Aboutus">О нас</a>
+                    <a href="comment" id="Portfolio">Отзывы</a>
+                    <a href="contact" id="Contact">Контакты</a>
+                </nav>
+			</div>
+			<div class="header_content_block">
+				
+			</div>
+		</div>
+			<div class="block_3">
+				<p class="block_3_text">Отличное обслуживание, очень вкусные йогурты с: <br> <span id="neader_name_text_red"> Александра</span><br><br>
+				Самые лучшие пончики что я когда либо пробовал! <br> <span id="neader_name_text_red"> Илья</span><br><br>
+				Очень добрый и приветливый персонал, с который всегда приятно общется <br> <span id="neader_name_text_red"> Максим</span><br><br>
+				Сразу стало моим любимым местом в городе с самыми вкусными йогуртами! <br> <span id="neader_name_text_red"> Виолетта</span> <br><br>
+				Очень часто посищаю это место, сильно нравится фкус здешних пончиков. <br> <span id="neader_name_text_red"> Ирина</span><br><br>
+				Неповторимое место в Красноярске!. <br> <span id="neader_name_text_red"> Данил</span></p>
+				<img src="/static/Content/Strawberry.jpg" alt="" class="block_3_back_image">
+				<img src="/static/Content/shutterstock_508647064.jpg" alt="" class="block_3_back_image2">
+			<p class="block_5_copiright">@ <span id="neader_title_mini_text_yellow"> Berry joy</span>,all pight reserves</p>
+		</div>
+	</div>
+
+	<script>
+		new WOW().init();
+	</script>
+	
+</body>
+</html>

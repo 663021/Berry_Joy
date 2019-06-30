@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Berry Joy</title>
+    <link rel="stylesheet" type="text/css" href="/static/style_Product.css">
+    <link rel="stylesheet" href="/static/animate.css">
+    <link rel="icon" type="image/png" href="/static/Content/Berry_Joy_icon.png">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() != 0) {
+                    $('#toTop').fadeIn();
+                } else {
+                    $('#toTop').fadeOut();
+                }
+            });
+            $('#toTop').click(function () {
+                $('body,html').animate({ scrollTop: 0 }, 800);
+            });
+        });
+    </script>
+
+    <style>
+        @font-face {
+            font-family: BebasNeueBold;
+            src: url(/static/Fonts/11585.ttf);
+        }
+    </style>
+</head>
+<body>
+
+	<script src="js/wow.min.js"></script>
+
+	<div id="toTop"> <p id="toTop_text">Наверх</p> </div>
+
+	<div class="all wow slideInLeft" data-wow-duration="1s" data-wow-offset = "200">
+		<div class="header">
+			<div class="back_image">
+				<img style="border-bottom: 0.5vw solid #d12000" src="/static/Content/header_back_image3.jpg" alt="" id="back_image_image">
+			</div>
+			<div class="logo_block">
+				<a href="../Main/index.html">
+					<p class="logo_text">Berry Joy</p>
+				</a>
+			</div>
+			<div class="logo_png">
+				<img src="/static/Content/Berry_Joy_logo.png" alt="" id="logo_png_image">
+			</div>
+			<div id="navigation_menu">
+                <nav>
+                    <a href="main" id="Home">Главная</a>
+                    <a href="product" id="Services">Товары</a>
+                    <a href="about" id="Aboutus">О нас</a>
+                    <a href="comment" id="Portfolio">Отзывы</a>
+                    <a href="contact" id="Contact">Контакты</a>
+                </nav>
+			</div>
+		</div>
+		<div class="block_1">
+			<p class="main_text">У нас самые свежие <span id="neader_title_mini_text_red"> йогурты </span> в красноярске, обладающие неповторимым вкусом.
+				<br><br>При приготовлении используются только свежие  <span id="neader_title_mini_text_red"> фрукты</span> и <span id="neader_title_mini_text_red"> молоко</span><br><br>Новейшее оборудование для приготовления йогуртов позволяет нам приготовлять саме   <span id="neader_title_mini_text_red">вкусные </span>йогурты </p>
+			<div class="about_block">
+				<img src="/static/Content/Muesli_Berry.jpg" alt="" id="info_logo">
+				<p class="about_text">Йогурты</p>
+			</div>
+			<a href="yogurt"><button class="block_1_button_read_more">Подробнее</button></a>
+		</div>
+
+		<div class="blocK_2">
+			<p style="left: 30vw;" class="main_text">Мы продаем и используем только <span id="neader_title_mini_text_red"> свежие </span> фрукты.
+				<br><br>У нас лучшие поставщики фрутов с громкими именами, что гаранирует качество   <span id="neader_title_mini_text_red"> фруктов </span> <br><br>Мы продаем фрукты не только с продуктами но и отдельно </p>
+			<div class="about_block">
+				<img style="top: 57vw; left: 51vw; width: 26vw;" src="/static/Content/d45f8882d38c9d89d4f32e948d4d46c7.jpg" alt="" id="info_logo">
+				<p style="left: 32vw;" class="about_text">Фрукты</p>
+			</div>
+			<a href="fruit"><button style="left: 33vw; top: 75vw" class="block_1_button_read_more">Подробнее</button></a>
+		</div>
+
+		<div class="blocK_3">
+			<p class="main_text">Можем предложить преобрести вкуснейшие <span id="neader_title_mini_text_red"> свежевыпеченные </span>  пончики
+				<br><br>Все пончики которые у нас продаются выпекаются ежедневно, что гарантирует их  <span id="neader_title_mini_text_red"> великолепный</span> вкус <br><br> Мы делаем пончики с самыми <span id="neader_title_mini_text_red">различными вкусами </span> , каждый сможет нати то что понравится ему</p>
+			<div class="about_block">
+				<img style="top: 61vw; left: 21vw; width: 28vw;" src="/static/Content/donuts.jpg_1700Wx1700H.jpg" alt="" id="info_logo">
+				<p style="left: 57vw" class="about_text">Пончики</p>
+			</div>
+			<a href="doughnut"><button class="block_1_button_read_more">Подробнее</button></a>
+		</div>
+
+		<div class="blocK_2_1">
+			<p style="left: 30vw;" class="main_text">Попробуйте у нас <span id="neader_title_mini_text_red"> горячие и вкусные гонконгские </span> вафли.
+				<br><br>Используя только свежее тесто и провернное оборудование, мы приготовим ваши  <span id="neader_title_mini_text_red"> любимые </span> вафли очень быстро <br><br>Ждем вас у себя, что бы вы лично убедились </p>
+			<div class="about_block">
+				<img style="top: 56vw; left: 51vw; width: 23vw;" src="/static/Content/wafl.png" alt="" id="info_logo">
+				<p style="left: 33.4vw;" class="about_text">Вафли</p>
+			</div>
+			<a href="waffle"><button style="left: 33vw; top: 75vw" class="block_1_button_read_more">Подробнее</button></a>
+		</div>
+
+			<p class="block_5_copiright">@ <span id="neader_title_mini_text_yellow"> Berry joy</span>,all pight reserves</p>
+		</div>
+	</div>
+
+	<script>
+		new WOW().init();
+	</script>
+	
+</body>
+</html>

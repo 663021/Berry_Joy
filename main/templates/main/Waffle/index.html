@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Berry Joy</title>
+    <link rel="stylesheet" type="text/css" href="/static/style_Waffle.css">
+    <link rel="stylesheet" type="text/css" href="/static/style14.css">
+    <link rel="stylesheet" href="/static/animate.css">
+    <link rel="icon" type="image/png" href="/static/Content/Berry_Joy_icon.png">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() != 0) {
+                    $('#toTop').fadeIn();
+                } else {
+                    $('#toTop').fadeOut();
+                }
+            });
+            $('#toTop').click(function () {
+                $('body,html').animate({ scrollTop: 0 }, 800);
+            });
+        });
+    </script>
+
+    <style>
+        @font-face {
+            font-family: BebasNeueBold;
+            src: url(/static/Fonts/11585.ttf);
+        }
+
+        .all {
+            position: relative;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+
+        html,body{
+	        overflow-x: hidden;
+	        padding: 0px;
+	        margin: 0 auto;
+	        background-color: white;
+        }
+
+        .block_5_copiright {
+            position: relative;
+            font-size: 1.5vw;
+            font-family: BebasNeueBold;
+            color: #284c69;
+            width: 20vw;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+	<script src="js/wow.min.js"></script>
+
+	<div id="toTop"> <p id="toTop_text">Наверх</p> </div>
+
+	<div class="all wow slideInLeft" data-wow-duration="1s" data-wow-offset = "200">
+		<div class="header">
+			<div class="back_image">
+				<img style="border-bottom: 0.5vw solid #d12000" src="/static/Content/header_back_image3.jpg" alt="" id="back_image_image">
+			</div>
+			<div class="logo_block">
+				<a href="../Main/index.html">
+					<p style="margin-top:3.5vw" class="logo_text">Berry Joy</p>
+				</a>
+			</div>
+			<div class="logo_png">
+				<img src="/static/Content/Berry_Joy_logo.png" alt="" id="logo_png_image">
+			</div>
+			<div id="navigation_menu">
+                <nav>
+                    <a href="main" id="Home">Главная</a>
+                    <a href="product" id="Services">Товары</a>
+                    <a href="about" id="Aboutus">О нас</a>
+                    <a href="comment" id="Portfolio">Отзывы</a>
+                    <a href="contact" id="Contact">Контакты</a>
+                </nav>
+			</div>
+		</div>
+		<div class="block_1">
+			<p class="main_text">Попробуйте у нас <span id="neader_title_mini_text_red"> горячие и вкусные гонконгские </span> вафли.
+				<br><br>Используя только свежее тесто и провернное оборудование, мы приготовим ваши  <span id="neader_title_mini_text_red"> любимые </span> вафли очень быстро <br><br>Ждем вас у себя, что бы вы лично убедились </p>
+			<div class="about_block">
+				<img src="/static/Content/1_RUEGVVhkva-k5QGW-Kw-Tg.jpeg" style="opacity: 0.4;left:6vw;width: 110vw;z-index: 0;" alt="" id="info_logo">
+				<p class="about_text">Наши вафли</p>
+			</div>
+		</div>
+
+		<div style="top: -4vw;" class="block_1">
+			<div class="about_block">
+				<p style="left: 58.5vw" class="about_text">price list</p>
+			</div>
+		</div>
+
+        <div style="padding-top: 54vw;z-index: 10" class="container">
+            <div class="row">
+
+                {% for post in object_list %}
+                <div class="col-md-6">
+                    <p style="left: 0;top: 0;width: 18vw;border-right: 0.1vw solid #d12000" class="main_text">
+                        <span id="neader_title_mini_text_red"> {{post.name}} </span>
+                        <br><br>{{post.text}}
+                    </p>
+                    <p style="left: 21vw;top: -8vw;width: 18vw;" class="main_text"> {{post.price}}р. <br> за {{post.mass}} шт. </p>
+                </div>
+                {% endfor %}
+            </div>
+            <div style="text-align:center;" class="row">
+                <div style="text-align:center;" class="col-md-4">
+                </div>
+                <div style="text-align:center;" class="col-md-4">
+                    <p style="text-align:center;font-size: 1.5vw;font-family: BebasNeueBold;color: #284c69;z-index: 10;margin-bottom: 3vw">@ <span id="neader_title_mini_text_yellow"> Berry joy</span>,all pight reserves</p>
+                </div>
+                <div style="text-align:center;" class="col-md-4">
+                </div>
+            </div>
+        </div>
+	</div>
+
+	<script>
+		new WOW().init();
+	</script>
+	
+</body>
+</html>

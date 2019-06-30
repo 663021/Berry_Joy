@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Berry Joy</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="/static/style_About.css">
+    <link rel="stylesheet" href="/static/animate.css">
+    <link rel="icon" type="image/png" href="/static/Content/Berry_Joy_icon.png">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() != 0) {
+                    $('#toTop').fadeIn();
+                } else {
+                    $('#toTop').fadeOut();
+                }
+            });
+            $('#toTop').click(function () {
+                $('body,html').animate({ scrollTop: 0 }, 800);
+            });
+        });
+    </script>
+
+    <style>
+        @font-face {
+            font-family: BebasNeueBold;
+            src: url(/static/Fonts/11585.ttf);
+        }
+    </style>
+</head>
+<body>
+
+	<script src="js/wow.min.js"></script>
+
+	<div id="toTop"> <p id="toTop_text">Наверх</p> </div>
+
+	<div class="all wow slideInLeft" data-wow-duration="1s" data-wow-offset = "200">
+		<div class="header">
+			<div class="back_image">
+				<img style="border-bottom: 0.5vw solid #d12000" src="/static/Content/header_back_image3.jpg" alt="" id="back_image_image">
+			</div>
+			<div class="logo_block">
+				<a href="../Main/index.html">
+					<p class="logo_text">Berry Joy</p>
+				</a>
+			</div>
+			<div class="logo_png">
+				<img src="/static/Content/Berry_Joy_logo.png" alt="" id="logo_png_image">
+			</div>
+			<div id="navigation_menu">
+                <nav>
+                    <a href="main" id="Home">Главная</a>
+                    <a href="product" id="Services">Товары</a>
+                    <a href="about" id="Aboutus">О нас</a>
+                    <a href="comment" id="Portfolio">Отзывы</a>
+                    <a href="contact" id="Contact">Контакты</a>
+                </nav>
+			</div>
+			<div class="header_content_block">
+				
+			</div>
+		</div>
+		<div class="block_1">
+			<p class="main_text">Мы используем только <span id="neader_title_mini_text_red"> свежие ингредиенты </span> для приготовления заказов.
+				<br><br>Наша компания  <span id="neader_title_mini_text_red"> Berry Joy</span> очень ответственно относится ко мнению и отзывам клиентов, что значит что мы всегда стремимся только к лучшему.<br><br>Наши сотрудники одни из самых квалифицированных работников на рынке труда, которые прекрасно знают свое дело.<br><br>Ждем вас лично оценить наши <span id="neader_title_mini_text_red">десерты</span> и качество обслуживания. Мы используем только <span id="neader_title_mini_text_red"> свежие ингредиенты </span> для приготовления заказов.
+				<br><br>Наша компания  <span id="neader_title_mini_text_red"> Berry Joy</span> очень ответственно относится ко мнению и отзывам клиентов, что значит что мы всегда стремимся только к лучшему.<br><br>Наши сотрудники одни из самых квалифицированных работников на рынке труда, которые прекрасно знают свое дело.<br><br>Ждем вас лично оценить наши <span id="neader_title_mini_text_red">десерты</span> и качество обслуживания.</p>
+			<div class="yellow_line"></div>
+			<div class="about_block">
+				<img src="/static/Content/info_icon.png" alt="" id="info_logo">
+				<p class="about_text">О НАС</p>
+			</div>
+			<div class="yellow_line_1"></div>
+		</div>
+			<p class="block_5_copiright">@ <span id="neader_title_mini_text_yellow"> Berry joy</span>,all pight reserves</p>
+		</div>
+	</div>
+
+	<script>
+		new WOW().init();
+	</script>
+	
+</body>
+</html>

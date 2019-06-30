@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Berry Joy</title>
+    <link rel="stylesheet" type="text/css" href="/static/style_Contact.css">
+    <link rel="icon" type="image/png" href="/static/Content/Berry_Joy_icon.png">
+    <link rel="stylesheet" href="/static/animate.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() != 0) {
+                    $('#toTop').fadeIn();
+                } else {
+                    $('#toTop').fadeOut();
+                }
+            });
+            $('#toTop').click(function () {
+                $('body,html').animate({ scrollTop: 0 }, 800);
+            });
+        });
+    </script>
+
+    <style>
+        @font-face {
+            font-family: BebasNeueBold;
+            src: url(/static/Fonts/11585.ttf);
+        }
+    </style>
+</head>
+<body>
+
+	<script src="js/wow.min.js"></script>
+
+	<div id="toTop"> <p id="toTop_text">Наверх</p> </div>
+
+	<div class="all wow slideInLeft" data-wow-duration="1s" data-wow-offset = "200">
+		<div class="header">
+			<div class="back_image">
+				<img style="border-bottom: 0.5vw solid #d12000" src="/static/Content/header_back_image3.jpg" alt="" id="back_image_image">
+			</div>
+			<div class="logo_block">
+				<a href="../Main/index.html">
+					<p class="logo_text">Berry Joy</p>
+				</a>
+			</div>
+			<div class="logo_png">
+				<img src="/static/Content/Berry_Joy_logo.png" alt="" id="logo_png_image">
+			</div>
+			<div id="navigation_menu">
+                <nav>
+                    <a href="main" id="Home">Главная</a>
+                    <a href="product" id="Services">Товары</a>
+                    <a href="about" id="Aboutus">О нас</a>
+                    <a href="comment" id="Portfolio">Отзывы</a>
+                    <a href="contact" id="Contact">Контакты</a>
+                </nav>
+			</div>
+			<div class="header_content_block">
+			</div>
+		</div>
+		<div class="block_1">
+			<p class="main_text"><span id="neader_title_mini_text_red"> Адрес: </span> Свободный просп., 67, Красноярск
+				<br><br><span id="neader_title_mini_text_red"> Телефон: </span> 255-60-72<br><br><span id="neader_title_mini_text_red"> Адрес электронной почты: </span> berry_joy_krsk@gmail.ru<br><br><span id="neader_title_mini_text_red"> Индекс: </span> 662917<br><br></p>
+			<div class="yellow_line"></div>
+			<div class="about_block">
+				<img src="../Content/map-marker.png" alt="" id="info_logo">
+				<p class="about_text">Контакты</p>
+			</div>
+		</div>
+			<div style="position: absolute; width: 100%; height: 20vw; top: 53vw;">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A47116ed3ff11a774893bc2a60ae79adbea726036ba66dd41a487af63fb8c4f09&amp;width=100%25&amp;height=30vw&amp;lang=ru_RU&amp;scroll=true"></script>
+        	</div>
+			<p class="block_5_copiright">@ <span id="neader_title_mini_text_yellow"> Berry joy</span>,all pight reserves</p>
+		</div>
+	</div>
+
+	<script>
+		new WOW().init();
+	</script>
+	
+</body>
+</html>
